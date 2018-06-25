@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.grid {
+  padding: 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: .2rem;
+}
+
+.grid .row > .col,
+.grid .row > [class^="col-"] {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: #f2f2f2;
+  border: 1px solid #e0e0eb;
+}
+
+.grid .row:nth-child(2n) > .col,
+.grid .row:nth-child(2n) > [class^="col-"] {
+    background:#ffffff;
+}
+
+.grid .row:nth-child(1) > .col,
+.grid .row:nth-child(1) > [class^="col-"] {
+    background:#737373;
+    color: #ffffff;
+}
